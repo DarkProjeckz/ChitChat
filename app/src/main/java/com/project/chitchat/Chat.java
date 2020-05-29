@@ -59,8 +59,8 @@ public class Chat extends AppCompatActivity {
         alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         mp = MediaPlayer.create(Chat.this,alarmSound);
         Firebase.setAndroidContext(this);
-        reference1 = new Firebase("https://chit-chatz-d65d4.firebaseio.com/messages/" + SaveSharedPreference.getUserName(this) + "_" + UserDetails.chatWith);
-        reference2 = new Firebase("https://chit-chatz-d65d4.firebaseio.com/messages/" + UserDetails.chatWith + "_" + SaveSharedPreference.getUserName(this));
+        reference1 = new Firebase("https://chit-chatz-d65d4.firebaseio.com/messagess/" + SaveSharedPreference.getUserName(this) + "_" + UserDetails.chatWith);
+        reference2 = new Firebase("https://chit-chatz-d65d4.firebaseio.com/messagess/" + UserDetails.chatWith + "_" + SaveSharedPreference.getUserName(this));
 
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override

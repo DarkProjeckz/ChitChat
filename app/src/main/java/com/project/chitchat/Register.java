@@ -84,12 +84,12 @@ public class Register extends AppCompatActivity {
                     pd.setMessage("Loading...");
                     pd.show();
 
-                    String url = "https://chit-chatz-d65d4.firebaseio.com/users.json";
+                    String url = "https://chit-chatz-d65d4.firebaseio.com/userss.json";
 
                     StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
                         @Override
                         public void onResponse(String s) {
-                            Firebase reference = new Firebase("https://chit-chatz-d65d4.firebaseio.com/users");
+                            Firebase reference = new Firebase("https://chit-chatz-d65d4.firebaseio.com/userss");
 
                             if(s.equals("0000")) {
                                 reference.child(user).child("password").setValue(pass);

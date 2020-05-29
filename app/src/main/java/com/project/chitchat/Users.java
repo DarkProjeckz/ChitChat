@@ -87,7 +87,7 @@ public class Users extends AppCompatActivity {
             pd.setMessage("Loading...");
             pd.show();
 
-            String url = "https://chit-chatz-d65d4.firebaseio.com/users.json";
+            String url = "https://chit-chatz-d65d4.firebaseio.com/userss.json";
 
             StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
                 @Override

@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     password.setError("can't be blank");
                 }
                 else{
-                    String url = "https://chit-chatz-d65d4.firebaseio.com/users.json";
+                    String url = "https://chit-chatz-d65d4.firebaseio.com/userss.json";
                     final ProgressDialog pd = new ProgressDialog(MainActivity.this);
                     pd.setMessage("Loading...");
                     pd.show();
